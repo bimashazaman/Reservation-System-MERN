@@ -65,75 +65,78 @@ const Search = () => {
                     <FontAwesomeIcon icon={faPerson} />
                     <span className='text-gray-400 cursor-pointer'>
                         {`${options.adult} adult ~ ${options.children} Children ~ ${options.room} Room`}
+                        onClick={() => setOpenOptions(!openOptions)}
                     </span>
-                    <div className='absolute top-[50px] bg-white text-gray-600 rounded-md shadow-2xl p-3'>
-                        <div className='w-[200px] flex justify-between m-3'>
-                            <span>
-                                Adult
-                            </span>
-                            {/* end options text */}
-                            <div className="flex items-center gap-[10px] text-lg text-black">
-                                <button className='w-8 h-8 border-[3px] border-blue-900 text-blue-900 cursor-pointer' 
-                                onClick={() => handleOption("adult", "d")}
-                                disabled={options.adult <= 1}
-                                >
-                                    -
-                                </button>
-                                <span className=''>
-                                    {options.adult}
+                    {openOptions &&
+                        <div className='absolute top-[50px] bg-white text-gray-600 rounded-md shadow-2xl p-3'>
+                            <div className='w-[200px] flex justify-between m-3'>
+                                <span className='text-[19px] text-gray-500 font-semibold'>
+                                    Adult
                                 </span>
-                                <button className='w-8 h-8 border-[3px] border-blue-900 text-blue-900 cursor-pointer'
-                                    onClick={() => handleOption("adult", "i")}>
-                                    +
-                                </button>
-                            </div>
-                        </div>
-                        {/* end adult option */}
-
-                        <div className='w-[200px] flex justify-between m-3'>
-                            <span>
-                                Children
-                            </span>
-                            {/* end options text */}
-                            <div className="flex items-center gap-[10px] text-lg text-black">
-                                <button className='w-8 h-8 border-[3px] border-blue-900 text-blue-900 cursor-pointer'
-                                    onClick={() => handleOption("children", "d")}
-                                    disabled={options.children <= 1}
+                                {/* end options text */}
+                                <div className="flex items-center gap-[10px] text-lg text-black">
+                                    <button className='w-8 h-8 border-[3px] border-blue-900 text-blue-900 cursor-pointer'
+                                        onClick={() => handleOption("adult", "d")}
+                                        disabled={options.adult <= 1}
                                     >
-                                    -
-                                </button>
-                                <span className=''>
-                                    {options.children}
-                                </span>
-                                <button className='w-8 h-8 border-[3px] border-blue-900 text-blue-900 cursor-pointer'
-                                    onClick={() => handleOption("children", "i")}>
-                                    +
-                                </button>
+                                        -
+                                    </button>
+                                    <span className=''>
+                                        {options.adult}
+                                    </span>
+                                    <button className='w-8 h-8 border-[3px] border-blue-900 text-blue-900 cursor-pointer'
+                                        onClick={() => handleOption("adult", "i")}>
+                                        +
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                        {/* end Children option */}
+                            {/* end adult option */}
 
-                        <div className='w-[200px] flex justify-between m-3'>
-                            <span>
-                                Rooms
-                            </span>
-                            {/* end options text */}
-                            <div className="flex items-center gap-[10px] text-lg text-black">
-                                <button className='w-8 h-8 border-[3px] border-blue-900 text-blue-900 cursor-pointer' onClick={() => handleOption("room", "d")}
-                                 disabled={options.room <= 1}
-                                >
-                                    -
-                                </button>
-                                <span className=''>
-                                    {options.room}
+                            <div className='w-[200px] flex justify-between m-3'>
+                                <span className='text-[19px] text-gray-500 font-semibold'>
+                                    Children
                                 </span>
-                                <button className='w-8 h-8 border-[3px] border-blue-900 text-blue-900 cursor-pointer' onClick={() => handleOption("room", "i")}>
-                                    +
-                                </button>
+                                {/* end options text */}
+                                <div className="flex items-center gap-[10px] text-lg text-black">
+                                    <button className='w-8 h-8 border-[3px] border-blue-900 text-blue-900 cursor-pointer'
+                                        onClick={() => handleOption("children", "d")}
+                                        disabled={options.children <= 1}
+                                    >
+                                        -
+                                    </button>
+                                    <span className=''>
+                                        {options.children}
+                                    </span>
+                                    <button className='w-8 h-8 border-[3px] border-blue-900 text-blue-900 cursor-pointer'
+                                        onClick={() => handleOption("children", "i")}>
+                                        +
+                                    </button>
+                                </div>
                             </div>
+                            {/* end Children option */}
+
+                            <div className='w-[200px] flex justify-between m-3'>
+                                <span className='text-[19px] text-gray-500 font-semibold'>
+                                    Rooms
+                                </span>
+                                {/* end options text */}
+                                <div className="flex items-center gap-[10px] text-lg text-black">
+                                    <button className='w-8 h-8 border-[3px] border-blue-900 text-blue-900 cursor-pointer' onClick={() => handleOption("room", "d")}
+                                        disabled={options.room <= 1}
+                                    >
+                                        -
+                                    </button>
+                                    <span className=''>
+                                        {options.room}
+                                    </span>
+                                    <button className='w-8 h-8 border-[3px] border-blue-900 text-blue-900 cursor-pointer' onClick={() => handleOption("room", "i")}>
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                            {/* end Rooms option */}
                         </div>
-                        {/* end Rooms option */}
-                    </div>
+                    }
                     {/* end options */}
                 </div>
                 {/* end header search Item */}
