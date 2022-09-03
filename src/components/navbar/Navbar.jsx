@@ -1,18 +1,20 @@
-import './navbar.css';
+//App Name: Bijim Reservation 
+//Author: Bimasha Zaman
+//Contact: developerbimasha@gmail.com
 
 const navbar = () => {
   return (
     <>
-    <div className="navbar m-0 bg-slate-400">
-        <div className="navContainer">
-            <span className="logo">
+    <div className="m-0 bg-[#000080] flex justify-center h-[50px]">
+        <div className="w-full max-w-screen-lg text-gray-200 flex items-center justify-between">
+            <span className="font-medium">
                 BiJim Reservation
             </span>
             <div className="navItems">
-                <button className="navButton">
+                <button className="ml-4 border-none py-1 px-2 rounded-sm cursor-pointer bg-blue-100 text-blue-900 font-semibold hover:bg-white">
                     Register
                 </button>
-                <button className="navButton">
+                <button className="ml-4 border-none py-1 px-2 rounded-sm cursor-pointer bg-blue-100 text-blue-900 font-semibold hover:bg-white">
                     Login
                 </button>
             </div>
@@ -24,3 +26,5 @@ const navbar = () => {
 
 
 export default navbar
+
+

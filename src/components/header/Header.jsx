@@ -1,0 +1,73 @@
+import { faBed, faCar, faPlane, faTaxi } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import React from 'react';
+import Search from './Search'
+
+const Header = () => {
+    return (
+        <>
+            <div className='bg-[#000080] relative text-gray-100  justify-center gap-[10px] items-center '>
+                <br />
+                <div className="w-full max-w-[1024px] min-w-fit p-4 bg-[#000080] mt-0 ml-28 mr-0 mb-28">
+                    <br />
+                    <div className='flex gap-10'>
+                        <div className='bg-[#000080] text-gray-100 flex justify-center gap-[10px] items-center active:border border p-3 rounded-full text-lg'>
+                            <FontAwesomeIcon icon={faBed} /> <span>
+                                Stays
+                            </span>
+                        </div>
+                        {/* ending header list items */}
+
+                        <div className='bg-[#000080] text-gray-100 flex justify-center gap-[10px] items-center active:border hover:border p-3 rounded-full text-lg'>
+                            <FontAwesomeIcon icon={faPlane} /> <span> Flights</span>
+                        </div>
+                        {/* ending header list items */}
+
+                        <div className='bg-[#000080] text-gray-100 flex justify-center gap-[10px] items-center active:border hover:border p-3 rounded-full text-lg'>
+                            <FontAwesomeIcon icon={faCar} /> <span>Car</span>
+                        </div>
+                        {/* ending header list items */}
+
+                        <div className='bg-[#000080] text-gray-100 flex justify-center gap-[10px] items-center active:border hover:border p-3 rounded-full text-lg'>
+                            <FontAwesomeIcon icon={faTaxi} /> <span>Taxi</span>
+                        </div>
+                        {/* ending header list items */}
+                        <div className='bg-[#000080] text-gray-100 flex justify-center gap-[10px] items-center aactive:border hover:border p-3 rounded-full'>
+                            <FontAwesomeIcon icon={faTaxi} /> <span>Attraction</span>
+                        </div>
+                        {/* ending header list items */}
+                    </div>
+                    {/* end heaader container */}
+
+
+                    <h1 className="text-4xl mt-5">
+                        A lifetime of Discount? It's Genius.
+                    </h1>
+
+                    {/* end haeder title */}
+
+                    <p className='mt-5 mb-3'>
+                        Let's Travel the world together and enjoy the beauty Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, at.
+                    </p>
+                    {/* end HeaderDes */}
+
+                    <button className='bg-blue-900 p-2 cursor-pointer mb-20'>
+                        Sign in/ Register
+                    </button>
+                    <Search />
+                </div>
+
+                {/* ending headerlist */}
+            </div>
+
+            {/* Ending header */}
+        </>
+    )
+}
+
+export default Header
+
+
+//App Name: Bijim Reservation
+//Author: Bimasha Zaman
+//Contact: developerbimasha@gmail.com

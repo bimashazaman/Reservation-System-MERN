@@ -9,6 +9,7 @@ import List from './pages/list/List';
 import Hotel from './pages/hotel/Hotel';
 
 
+
 const App = () => {
   return (
     <BrowserRouter>
