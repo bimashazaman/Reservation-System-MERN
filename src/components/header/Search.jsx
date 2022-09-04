@@ -63,9 +63,8 @@ const Search = () => {
 
                 <div className='text-gray-500 flex items-center gap-3 '>
                     <FontAwesomeIcon icon={faPerson} />
-                    <span className='text-gray-400 cursor-pointer'>
+                    <span className='text-gray-400 cursor-pointer' onClick={() => setOpenOptions(!openOptions)}>
                         {`${options.adult} adult ~ ${options.children} Children ~ ${options.room} Room`}
-                        onClick={() => setOpenOptions(!openOptions)}
                     </span>
                     {openOptions &&
                         <div className='absolute top-[50px] bg-white text-gray-600 rounded-md shadow-2xl p-3'>

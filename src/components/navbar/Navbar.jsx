@@ -5,7 +5,7 @@
 const navbar = () => {
   return (
     <>
-    <div className="m-0 bg-[#000080] flex justify-center h-[50px]">
+    <div className="m-0 bg-gradient-to-r from-[#000080] to-blue-800  flex justify-center h-[50px]">
         <div className="w-full max-w-screen-lg text-gray-200 flex items-center justify-between">
             <span className="font-medium">
                 BiJim Reservation
