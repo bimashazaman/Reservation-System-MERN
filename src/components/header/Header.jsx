@@ -17,40 +17,40 @@ const Header = (type) => {
                                     Stays
                                 </span>
                             </div>
-                            {/* ending header list items */}
+                            {/* ending header list items by Bimasha */}
 
                             <div className=' text-gray-100 flex justify-center gap-[10px] items-center active:border hover:border p-3 rounded-full text-lg'>
                                 <FontAwesomeIcon icon={faPlane} /> <span> Flights</span>
                             </div>
-                            {/* ending header list items */}
+                            {/* ending header list items by Bimasha */}
 
                             <div className=' text-gray-100 flex justify-center gap-[10px] items-center active:border hover:border p-3 rounded-full text-lg'>
                                 <FontAwesomeIcon icon={faCar} /> <span>Car</span>
                             </div>
-                            {/* ending header list items */}
+                            {/* ending header list items by Bimasha */}
 
                             <div className=' text-gray-100 flex justify-center gap-[10px] items-center active:border hover:border p-3 rounded-full text-lg'>
                                 <FontAwesomeIcon icon={faTaxi} /> <span>Taxi</span>
                             </div>
-                            {/* ending header list items */}
+                            {/* ending header list items by Bimasha */}
                             <div className=' text-gray-100 flex justify-center gap-[10px] items-center aactive:border hover:border p-3 rounded-full'>
                                 <FontAwesomeIcon icon={faTaxi} /> <span>Attraction</span>
                             </div>
-                            {/* ending header list items */}
+                            {/* ending header list items by Bimasha */}
                         </div>
-                        {/* end heaader container */}
+                        {/* end heaader container by Bimasha */}
 
 
                         <h1 className="text-4xl mt-20">
                             A lifetime of Discount? It's Genius.
                         </h1>
 
-                        {/* end haeder title */}
+                        {/* end haeder title  by Bimasha*/}
 
                         <p className='mt-5 mb-3'>
                             Let's Travel the world together and enjoy the beauty Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, at.
                         </p>
-                        {/* end HeaderDes */}
+                        {/* end HeaderDes by Bimasha*/}
 
                         <button className='font-semibold p-3 rounded-md cursor-pointer mb-20 bg-gradient-to-r from-blue-500 to-[#2c2c93] hover:from-pink-500 hover:to-yellow-500'>
                             Sign in/ Register
@@ -58,10 +58,10 @@ const Header = (type) => {
                         <Search />
                     </div>
 
-                    {/* ending headerlist */}
+                    {/* ending headerlist by Bimasha*/}
                 </div>
             }
-            {/* Ending header */}
+            {/* Ending header by Bimasha*/}
         </>
     )
 }

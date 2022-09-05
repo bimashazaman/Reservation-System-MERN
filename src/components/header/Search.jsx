@@ -44,7 +44,7 @@ const Search = (type) => {
                     <FontAwesomeIcon icon={faBed} />
                     <input type="text" name="" placeholder='Where are you going' className="border-none outline-none bg-gray-100" id="" />
                 </div>
-                {/* end header search Item */}
+                {/* end header search Item by Bimasha by Bimasha*/}
                 <div className='text-gray-500 flex items-center gap-3 '>
                     <FontAwesomeIcon icon={faCalendarDays} />
                     <span onClick={() => setOpenDate(!openDate)} className='text-gray-400 cursor-pointer'>
@@ -58,7 +58,7 @@ const Search = (type) => {
                         className='absolute top-[50px] z-20'
                     />}
                 </div>
-                {/* end header search Item */}
+                {/* end header search Item by Bimasha */}
 
 
                 <div className='text-gray-500 flex items-center gap-3 '>
@@ -133,12 +133,12 @@ const Search = (type) => {
                                     </button>
                                 </div>
                             </div>
-                            {/* end Rooms option */}
+                            {/* end Rooms option by Bimasha*/}
                         </div>
                     }
                     {/* end options */}
                 </div>
-                {/* end header search Item */}
+                {/* end header search Item by Bimasha */}
 
                 <div className='text-gray-400 cursor-pointer flex items-center gap-3 '>
 
@@ -146,7 +146,7 @@ const Search = (type) => {
                         Search
                     </button>
                 </div>
-                {/* end header search Item */}
+                {/* end header search Item by Bimasha */}
             </div>
             {/* end header search */}
         </>

@@ -16,9 +16,9 @@ const PropertyList = () => {
               233 Hotels
             </h2>
           </div>
-          {/* end plist title*/}
+          {/* end plist title  by Bimasha*/}
         </div>
-        {/* end plist item*/}
+        {/* end plist item by Bimasha*/}
 
 
         <div className='rounded-xl overflow-hidden flex-1 cursor-pointer'>
@@ -31,9 +31,9 @@ const PropertyList = () => {
               233 Hotels
             </h2>
           </div>
-          {/* end plist title*/}
+          {/* end plist title  by Bimasha*/}
         </div>
-        {/* end plist item*/}
+        {/* end plist item by Bimasha*/}
 
 
         <div className='rounded-xl overflow-hidden flex-1 cursor-pointer'>
@@ -46,9 +46,9 @@ const PropertyList = () => {
               233 Hotels
             </h2>
           </div>
-          {/* end plist title*/}
+          {/* end plist title  by Bimasha*/}
         </div>
-        {/* end plist item*/}
+        {/* end plist item by Bimasha*/}
 
 
 
@@ -63,9 +63,9 @@ const PropertyList = () => {
               233 Hotels
             </h2>
           </div>
-          {/* end plist title*/}
+          {/* end plist title  by Bimasha*/}
         </div>
-        {/* end plist item*/}
+        {/* end plist item by Bimasha*/}
 
 
         <div className='rounded-xl overflow-hidden flex-1 cursor-pointer'>
@@ -78,9 +78,9 @@ const PropertyList = () => {
               233 Hotels
             </h2>
           </div>
-          {/* end plist title*/}
+          {/* end plist title  by Bimasha*/}
         </div>
-        {/* end plist item*/}
+        {/* end plist item by Bimasha*/}
 
 
       </div>

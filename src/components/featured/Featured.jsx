@@ -5,7 +5,6 @@ const Featured = () => {
         <>
             <div className='w-full max-w-5xl flex justify-between gap-5'>
 
-
                 <div className='relative white rounded-xl z-10 h-[20%] overflow-hidden'>
                     <img src="https://www.maharajatrails.com/public/images/tour-package/5_days_Singapore1.jpg" alt="" className='w-full object-cover ' />
                     <div className='absolute bottom-5 '>
@@ -16,9 +15,9 @@ const Featured = () => {
                             123
                         </h2>
                     </div>
-                    {/* end featured Title */}
+                    {/* end featured Title by Bimasha */}
                 </div>
-                {/* end featured item */}
+                {/* end featured item by Bimasha*/}
 
 
 
@@ -32,9 +31,9 @@ const Featured = () => {
                             123
                         </h2>
                     </div>
-                    {/* end featured Title */}
+                    {/* end featured Title by Bimasha */}
                 </div>
-                {/* end featured item */}
+                {/* end featured item by Bimasha*/}
 
 
                 <div className='relative white rounded-xl z-10 h-[20%] overflow-hidden'>
@@ -47,14 +46,14 @@ const Featured = () => {
                             123
                         </h2>
                     </div>
-                    {/* end featured Title */}
+                    {/* end featured Title by Bimasha */}
                 </div>
-                {/* end featured item */}
+                {/* end featured item by Bimasha*/}
 
 
 
             </div>
-            {/* end featured */}
+            {/* end featured by Bimasha */}
         </>
     )
 }
