@@ -8,7 +8,7 @@ import 'react-date-range/dist/theme/default.css'; // theme css file
 import { format } from 'date-fns'
 
 
-const Search = () => {
+const Search = (type) => {
     const [openDate, setOpenDate] = useState(false);
 
     const [openOptions, setOpenOptions] = useState(false);
@@ -55,7 +55,7 @@ const Search = () => {
                         onChange={item => setState([item.selection])}
                         moveRangeOnFirstSelection={false}
                         ranges={state}
-                        className='absolute top-[50px] '
+                        className='absolute top-[50px] z-20'
                     />}
                 </div>
                 {/* end header search Item */}
@@ -67,7 +67,7 @@ const Search = () => {
                         {`${options.adult} adult ~ ${options.children} Children ~ ${options.room} Room`}
                     </span>
                     {openOptions &&
-                        <div className='absolute top-[50px] bg-white text-gray-600 rounded-md shadow-2xl p-3'>
+                        <div className='absolute z-20 top-[50px] bg-white text-gray-600 rounded-md shadow-2xl p-3'>
                             <div className='w-[200px] flex justify-between m-3'>
                                 <span className='text-[19px] text-gray-500 font-semibold'>
                                     Adult
