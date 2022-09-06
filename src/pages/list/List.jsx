@@ -2,8 +2,9 @@ import React, { useState } from 'react'
 import '../../pages/home/home.css'
 import Navbar from '../../components/navbar/Navbar';
 import Icons from '../../components/icons/Icons';
-import Search from './Search';
+import Search from './Search.jsx';
 import { useLocation } from 'react-router-dom';
+import SearchIteam from '../../components/searchItem/SearchIteam';
 
 
 const List = () => {
@@ -21,7 +22,15 @@ const List = () => {
         <div className='w-full max-w-[1024px] flex gap-5 '>
           <Search />
           <div className='flex-[3]'>
-
+            <SearchIteam />
+            <SearchIteam />
+            <SearchIteam />
+            <SearchIteam />
+            <SearchIteam />
+            <SearchIteam />
+            <SearchIteam />
+            <SearchIteam />
+            <SearchIteam />
           </div>
           {/* end list Result by Bimasha */}
 

@@ -13,7 +13,7 @@ const Search = () => {
 
     return (
         <>
-            <div className='flex-[1] bg-gray-10 border-2 shadow-xl rounded-sm p-2 sticky top-10'>
+            <div className='flex-[1] bg-gray-10 border-2 shadow-xl rounded-sm p-2 sticky h-[max-content] top-10'>
                 <h1 className='text-2xl text-gray-600 mb-4 font-semibold'>
                     Search
                 </h1>
@@ -22,6 +22,7 @@ const Search = () => {
                     <label htmlFor="">
                         Destination
                     </label>
+                    <hr />
                     <input type="text" placeholder={destination} className='border-2 my-2 ring-2 outline-none p-1 rounded-sm w-full cursor-pointer' />
                 </div>
                 {/* end destination by Bimasha */}
@@ -30,6 +31,7 @@ const Search = () => {
                     <label htmlFor="">
                         Check-in Date
                     </label>
+                    <hr />
                     <span className='border-2 my-2 ring-2 outline-none p-1 rounded-sm w-full' onClick={() => setOpenDate(!openDate)}>
                         {`${format(state[0].startDate, "MM/dd/yyyy")} to ${format(state[0].endDate, "MM/dd/yyyy")}`}
                     </span>
@@ -49,6 +51,7 @@ const Search = () => {
                     <label htmlFor="">
                         Options
                     </label>
+                    <hr />
 
                     <div className='p-3'>
 
