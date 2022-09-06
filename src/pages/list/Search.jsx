@@ -42,9 +42,75 @@ const Search = () => {
                             minDate={new Date()}
                         />
                     }
-
                 </div>
                 {/* end Check-in Date by Bimasha */}
+
+                <div className=''>
+                    <label htmlFor="">
+                        Options
+                    </label>
+
+                    <div className='p-3'>
+
+                        <div className='flex justify-between mb-3 mt-4 text-gray-900 text-sm'>
+                            <span className=''>
+                                Min Price- <small>Per night</small>
+                            </span>
+                            <span>
+                                <input className='border-2 ring-2 outline-none text-gray-600 font-semibold w-14' placeholder='100$' type="number" />
+                            </span>
+                        </div>
+                        {/* End Search options by bimasha */}
+
+
+                        <div className='flex justify-between mb-3 text-gray-900 text-sm'>
+                            <span className=''>
+                                Max Price -<small>Per night</small>
+                            </span>
+                            <span>
+                                <input className='border-2 ring-2 outline-none text-gray-600 font-semibold w-14' type="number" placeholder='1000$' />
+                            </span>
+                        </div>
+                        {/* End Search options by bimasha */}
+
+
+                        <div className='flex justify-between mb-3 text-gray-900 text-sm'>
+                            <span className='flex justify-between mb-3 text-gray-900 text-sm'>
+                                Adult
+                            </span>
+                            <span>
+                                <input className='border-2 ring-2 outline-none text-gray-600 font-semibold w-14' type="number" min={1} placeholder={options.adult} />
+                            </span>
+                        </div>
+                        {/* End Search options by bimasha */}
+
+
+                        <div className='flex justify-between mb-3 text-gray-900 text-sm'>
+                            <span className='flex justify-between mb-3 text-gray-900 text-sm'>
+                                Children
+                            </span>
+                            <span>
+                                <input className='border-2 ring-2 outline-none text-gray-600 font-semibold w-14' type="number" min={1} placeholder={options.children} />
+                            </span>
+                        </div>
+                        {/* End Search options by bimasha */}
+
+                        <div className='flex justify-between mb-3 text-gray-900 text-sm'>
+                            <span className='flex justify-between mb-3 text-gray-900 text-sm'>
+                                Room
+                            </span>
+                            <span>
+                                <input className='border-2 ring-2 outline-none text-gray-600 font-semibold w-14' type="number" min={1} placeholder={options.room} />
+                            </span>
+                        </div>
+                        {/* End Search options by bimasha */}
+                    </div>
+                    {/* end list options wrapper by Bimasha*/}
+                </div>
+                {/* end list item by Bimasha*/}
+                <button className='p-3 bg-blue-600 w-full text-white font-semibold rounded-sm border-2 cursor-pointer'>
+                    Search
+                </button>
             </div>
             {/* end list search by Bimasha */}
         </>
