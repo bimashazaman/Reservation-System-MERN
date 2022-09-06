@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../pages/home/home.css'
 import Navbar from '../../components/navbar/Navbar';
 import Icons from '../../components/icons/Icons';
 import Search from './Search';
+import { useLocation } from 'react-router-dom';
 
 
 const List = () => {
+
+  const location = useLocation();
+  const [destination, setDestination] = useState(location.state.destination);
+  const [state, setState] = useState(location.state.state);
+  const [options, setOptions] = useState(location.state.options);
+
   return (
     <>
       <Navbar />

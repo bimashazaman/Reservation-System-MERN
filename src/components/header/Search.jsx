@@ -6,12 +6,13 @@ import { DateRange } from 'react-date-range';
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { format } from 'date-fns'
+import { useNavigate } from 'react-router-dom';
 
 
 const Search = (type) => {
     const [openDate, setOpenDate] = useState(false);
-
     const [openOptions, setOpenOptions] = useState(false);
+    const [destination, setDestination] = useState("");
     const [options, setOptions] = useState({
         adult: 1,
         children: 1,
@@ -28,8 +29,6 @@ const Search = (type) => {
         console.log('fgegrtg')
     }
 
-
-
     const [state, setState] = useState([
         {
             startDate: new Date(),
@@ -37,12 +36,31 @@ const Search = (type) => {
             key: 'selection'
         }
     ]);
+
+
+    const navigate = useNavigate()
+    const handleSearch = () => {
+        navigate("/hotels", {
+            state: {
+                destination,
+                state,
+                options
+            }
+        })
+    }
+
+
     return (
         <>
             <div className='h-8 bg-gray-100 border-[4px] border-solid px-5 py-6 absolute bottom-[-25px] border-yellow-800 flex items-center justify-between w-full max-w-[1024px]'>
                 <div className='text-gray-500 flex items-center gap-3 '>
                     <FontAwesomeIcon icon={faBed} />
-                    <input type="text" name="" placeholder='Where are you going' className="border-none outline-none bg-gray-100" id="" />
+                    <input type="text"
+                        name=""
+                        placeholder='Where are you going'
+                        className="border-none outline-none bg-gray-100"
+                        onChange={e => setDestination(e.target.value)}
+                    />
                 </div>
                 {/* end header search Item by Bimasha by Bimasha*/}
                 <div className='text-gray-500 flex items-center gap-3 '>
@@ -51,6 +69,7 @@ const Search = (type) => {
                         {`${format(state[0].startDate, "MM/dd/yyyy")} to ${format(state[0].endDate, "MM/dd/yyyy")}`}
                     </span>
                     {openDate && <DateRange
+                        minDate={new Date()}
                         editableDateInputs={true}
                         onChange={item => setState([item.selection])}
                         moveRangeOnFirstSelection={false}
@@ -142,7 +161,7 @@ const Search = (type) => {
 
                 <div className='text-gray-400 cursor-pointer flex items-center gap-3 '>
 
-                    <button className='bg-blue-900 p-2 text-white cursor-pointer'>
+                    <button className='bg-blue-900 p-2 text-white cursor-pointer' onClick={handleSearch}>
                         Search
                     </button>
                 </div>
