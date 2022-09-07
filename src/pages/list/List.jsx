@@ -7,6 +7,7 @@ import { useLocation } from 'react-router-dom';
 import SearchIteam from '../../components/searchItem/SearchIteam';
 
 
+
 const List = () => {
 
   const location = useLocation();

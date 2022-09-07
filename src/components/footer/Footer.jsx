@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <>
-            <div className="w-full max-w-[1024px] text-[12px]">
+            <div className="w-full max-w-[1024px] pt-10 text-[12px]">
                 <div className="flex w-full justify-between mb-[50px]">
                     <ul className="">
                         <li className='mb-3 text-blue-900 cursor-pointer'>Country </li>
