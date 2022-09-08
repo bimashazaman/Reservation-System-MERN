@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../../components/navbar/Navbar';
 import Icons from '../../components/icons/Icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faCircleArrowLeft, faCircleArrowRight, faCircleXmark, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import MailList from '../../components/mailList/MailList';
 import Footer from '../../components/footer/Footer';
 
 const Hotel = () => {
+
+  const [slideNum, setSlideNum] = useState(0);
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = (i) => {
+    setSlideNum(i)
+    setOpen(true)
+  }
+
 
   const photos = [
     {
@@ -31,9 +40,12 @@ const Hotel = () => {
 
   return (
     <div>
+      
       <Navbar />
       <Icons />
+     
       <div className='flex justify-center mt-5'>
+     
         <div className='w-full max-w-5xl flex flex-col gap-3 relative'>
           <button className='absolute top-[10px] right-0 p-2 bg-blue-800 text-white font-[500] rounded-md hover:bg-blue-500 border-2'>
             Reserve or Book Now
@@ -58,11 +70,25 @@ const Hotel = () => {
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error.
           </span>
           {/* end hotel highlight by Bimasha */}
+          {open &&
+          <div className="sticky top-0 left-0 w-full h-full bg-transparent z-50 items-center justify-center flex ">
+           <div>
+           <FontAwesomeIcon icon={faCircleXmark} className="absolute top-[20] right-5 text-3xl text-gray-500 cursor-pointer" onClick={()=>{setOpen(false)}}/>
+            {/* <FontAwesomeIcon icon={faCircleArrowLeft} className=""/> */}
+            <div className='w-full h-full flex justify-center items-center'>
+            <img src={photos[slideNum].src} alt="" className='h-[80vh] w-[80%] border-[13px] border-blue-600' />
+            </div>
+            {/* end slidder wrapper by bimasha */}
+            {/* <FontAwesomeIcon icon={faCircleArrowRight}/> */}
+           </div>
+          </div>
+          //end slider by Bimasha 
+        }
 
           <div className='flex flex-wrap justify-between'>
-            {photos.map(photo => (
+            {photos.map((photo, index) => (
               <div className='w-[33%]'>
-                <img src={photo.src} className="w-full mb-1 object-cover" alt="" />
+                <img onClick={()=>handleOpen(index)} src={photo.src} className="w-full mb-1 object-cover" alt="" />
               </div>
               // end hotel image wrapper by Bimasha
             ))}
@@ -107,9 +133,9 @@ const Hotel = () => {
       </div>
       {/* end container by bimasha */}
       <MailList />
-<center>
-<Footer />
-</center>
+      <center>
+        <Footer />
+      </center>
     </div>
   )
 }
