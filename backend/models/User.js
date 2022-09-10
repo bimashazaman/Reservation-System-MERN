@@ -39,3 +39,8 @@ const UserSchema = new mongoose.Schema(
 );
 
 export default mongoose.model("User", UserSchema);
+
+
+//App Name: Bijim Reservation
+//Author: Bimasha Zaman
+//Contact: developerbimasha@gmail.com

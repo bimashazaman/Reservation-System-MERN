@@ -1,6 +1,7 @@
 // import external lib by Bimasha
 import express from "express";
 import Hotel from "../models/Hotel.js";
+import createError from "../utils/error.js";
 
 const HotelsRouter = express.Router();
 
@@ -52,17 +53,24 @@ HotelsRouter.get("/:id", async (req, res) => {
     res.status(500).json(error);
   }
 });
-s
+
 //Get all By Bimasha
-HotelsRouter.get("/", async (req, res) => {
-    try {
-      const hotels = await Hotel.find();
-      res.status(200).json(hotels);
-    } catch (error) {
-      res.status(500).json(error);
-    }
-  });
+HotelsRouter.get("/", async (req, res, next) => {
+  // return next();
 
+  const failed = true;
+  if (failed) return next(createError(401, "You are not Authenticated"));
 
+  try {
+    const hotels = await Hotel.find();
+    res.status(200).json(hotels);
+  } catch (err) {
+    next(err);
+  }
+});
 
 export default HotelsRouter;
+
+//App Name: Bijim Reservation
+//Author: Bimasha Zaman
+//Contact: developerbimasha@gmail.com

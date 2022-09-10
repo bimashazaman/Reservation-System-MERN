@@ -50,3 +50,9 @@ const HotelSchema = new mongoose.Schema({
 });
 
 export default mongoose.model("Hotel", HotelSchema)
+
+
+
+//App Name: Bijim Reservation
+//Author: Bimasha Zaman
+//Contact: developerbimasha@gmail.com

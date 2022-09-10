@@ -13,3 +13,10 @@ RoomsRouter.get("/", (req, res) => {
 
 
 export default RoomsRouter
+
+
+
+
+//App Name: Bijim Reservation
+//Author: Bimasha Zaman
+//Contact: developerbimasha@gmail.com

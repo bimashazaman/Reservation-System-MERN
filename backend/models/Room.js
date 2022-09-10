@@ -23,3 +23,9 @@ const RoomSchema = new mongoose.Schema(
 );
 
 export default mongoose.model("Room", RoomSchema);
+
+
+
+//App Name: Bijim Reservation
+//Author: Bimasha Zaman
+//Contact: developerbimasha@gmail.com
