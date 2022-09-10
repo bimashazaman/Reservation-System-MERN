@@ -1,3 +1,11 @@
+import React from 'react'
+
+export const room = () => {
+  return (
+    <div>room</div>
+  )
+}
+
 
 
 
