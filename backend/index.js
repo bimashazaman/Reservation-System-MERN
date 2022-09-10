@@ -15,6 +15,8 @@ import RoomsRouter from "./routes/rooms.js";
 const app = express();
 dotenv.config()
 
+app.use(express.json())
+
 //mongo connect by Bimasha
 const connect = async () => {
     try {
