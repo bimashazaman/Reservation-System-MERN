@@ -9,9 +9,6 @@ usersRouter.get("/", (req, res) => {
     res.send('Hi Bimasha users');
 })
 
-usersRouter.get("/register", (req, res) => {
-    res.send('Hi Bimasha users reg');
-})
 
 
 

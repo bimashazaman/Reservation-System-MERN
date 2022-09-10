@@ -9,10 +9,6 @@ RoomsRouter.get("/", (req, res) => {
     res.send('Hi Bimasha Rooms');
 })
 
-RoomsRouter.get("/register", (req, res) => {
-    res.send('Hi Bimasha Rooms reg');
-})
-
 
 
 

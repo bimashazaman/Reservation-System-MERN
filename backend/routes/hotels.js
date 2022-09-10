@@ -1,21 +1,17 @@
-
 // import external lib by Bimasha
 import express from "express";
 
-
 const HotelsRouter = express.Router();
 
-HotelsRouter.get("/", (req, res) => {
-    res.send('Hi Bimasha Hotels');
-})
+//Create by Bimasha
+HotelsRouter.post("/", (req, res) => {
+    
+});
 
-HotelsRouter.get("/register", (req, res) => {
-    res.send('Hi Bimasha Hotels reg');
-})
+//Update By Bimasha
 
+// Delete by Bimasha
 
+//Get all By Bimasha
 
-
-export default HotelsRouter
-
-
+export default HotelsRouter;
