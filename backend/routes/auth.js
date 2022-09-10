@@ -9,6 +9,10 @@ authRouter.get("/", (req, res) => {
     res.send('Hi Bimasha auth');
 })
 
+authRouter.get("/register", (req, res) => {
+    res.send('Hi Bimasha auth reg');
+})
+
 
 
 

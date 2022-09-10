@@ -7,6 +7,9 @@ import mongoose from "mongoose"
 
 //import internal by Bimasha
 import authRouter from "./routes/auth.js";
+import HotelsRouter from "./routes/hotels.js";
+import usersRouter from "./routes/users.js";
+import RoomsRouter from "./routes/rooms.js";
 
 //app scrap by bimasha
 const app = express();
@@ -29,6 +32,9 @@ mongoose.connection.on("Disconnected", ()=> {
 
 //middlewares By Bimasha
 app.use("/auth", authRouter);
+app.use("/users", usersRouter);
+app.use("/hotels", HotelsRouter);
+app.use("/rooms", RoomsRouter);
 
 
 
