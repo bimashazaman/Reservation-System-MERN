@@ -1,19 +1,12 @@
 
 // import external lib by Bimasha
 import express from "express";
+import { register } from "../controllers/auth.js";
 
 
 const authRouter = express.Router();
 
-authRouter.get("/", (req, res) => {
-    res.send('Hi Bimasha auth');
-})
-
-authRouter.get("/register", (req, res) => {
-    res.send('Hi Bimasha auth reg');
-})
-
-
+authRouter.get('/register', register)
 
 
 export default authRouter
