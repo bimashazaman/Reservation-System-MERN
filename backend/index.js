@@ -34,6 +34,9 @@ mongoose.connection.on("Disconnected", () => {
 });
 
 //middlewares By Bimasha
+app.use("/", (req,res)=>{
+  res.send("Hi")
+});
 app.use("/auth", authRouter);
 app.use("/users", usersRouter);
 app.use("/hotels", HotelsRouter);

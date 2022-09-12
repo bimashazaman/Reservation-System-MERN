@@ -8,3 +8,7 @@ const createError = (status, message) => {
 }
 
 export default createError
+
+//App Name: Bijim Reservation
+//Author: Bimasha Zaman
+//Contact: developerbimasha@gmail.com
