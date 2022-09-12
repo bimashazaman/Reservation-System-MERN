@@ -2,6 +2,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
+import cookieParser from "cookie-parser"
 
 //import internal by Bimasha
 import authRouter from "./routes/auth.js";
@@ -16,7 +17,7 @@ dotenv.config();
 
 
 app.use(express.json());
-
+app.use(cookieParser())
 
 
 //mongo connect by Bimasha
@@ -42,7 +43,7 @@ app.use("/users", usersRouter);
 app.use("/hotels", HotelsRouter);
 app.use("/rooms", RoomsRouter);
 
-app.use((err,res,req,next)=>{
+app.use((err,req,res,next)=>{
 
     const errorStatus = err.status || 500;
     const errorMessage = err.message || "something Went wrong"
